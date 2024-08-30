@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+    <style>
+      * {
+        background-color: grey;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="lang">
+      <li>Language</li>
+    </ul>
+  </body>
+
+  <script>
+    function addLang(name) {
+      const li = document.createElement("li");
+      li.innerHTML = name;
+      document.querySelector(".lang").appendChild(li);
+    }
+    // addLang("C++");
+    // addLang("Typescript");
+
+    function addOptiLang(name) {
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(name));
+      document.querySelector(".lang").appendChild(li);
+    }
+    addOptiLang("C++");
+    addOptiLang("Typescript");
+
+    const secLang = document.querySelector("li:nth-child(2)");
+    // secLang.innerHTML = "C"
+    let newLi = document.createElement("li");
+    newLi.textContent = "C";
+    secLang.replaceWith(newLi);
+
+    const sec = document.querySelector("li:first-child");
+    sec.outerHTML = "<li>Helllo</li>";
+  </script>
+</html>
