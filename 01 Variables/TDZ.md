@@ -1,0 +1,1 @@
+# [Temporal Dead Zone](https://www.freecodecamp.org/news/what-is-the-temporal-dead-zone/)
